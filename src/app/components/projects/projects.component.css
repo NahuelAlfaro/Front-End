@@ -1,0 +1,37 @@
+.proyectos{
+    width: 94vw;
+    border-style: solid;
+    border-color: rgb(30, 30, 30);
+    border-radius: 20px;
+    margin-top: 20px;
+    
+}
+
+.portf{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.proyectos-h1{
+    margin-left: 10px;
+    font-size: 35px;
+    color:  #FAFAFA;
+}
+
+.img-portf{
+    width: 25vw;
+    height: 29vh;
+}
+
+.portf-h1{
+    margin-left: 10px;
+    font-size: 30px;
+    color:  #FAFAFA;
+}
+
+.portf-p{
+    margin-left: 10px;
+    font-size: 18px;
+    color:  #FAFAFA;
+}

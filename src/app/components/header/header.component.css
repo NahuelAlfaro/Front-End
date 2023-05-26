@@ -1,0 +1,145 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #141414;  
+    align-items: center;
+}
+
+@media(min-width:1583px){
+    .header{
+        height: 15vh;
+    }
+}
+
+.logo-header{
+    width: 14vw;
+    height: 11vh;
+    border-radius: 8px;
+    margin-bottom: 6px;
+}
+@media(min-width:1583px){
+    .logo-header{
+        width: 13vw;
+        height: 11vh;
+        border-radius: 12px;
+    }
+}
+@media(max-width:700px){
+    .logo-header{
+        width: 30vw;
+    }
+}
+
+.desktop-menu{
+    display: none;
+}
+@media(min-width:1583px){
+    .desktop-menu{
+        margin-top: 30px;
+        margin-right: 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 45px;
+        width: 428px;
+        height: 28px;
+        
+    }
+    .botones{
+        border: none;
+        color: black;
+        font-size: 28px;
+        font-family: "koulen";
+        text-decoration: none;
+    }
+    html{
+        scroll-behavior: smooth;
+    }
+}
+
+.login{
+    display: flex;
+    flex-direction: inherit;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-right: 0.8em;
+    
+}
+@media(min-width:1583px){
+    .login{
+        height: 18vh;
+
+    }
+}
+
+.img-git{
+   margin-top: 7px; 
+   margin-bottom: 7px;
+   height: 40px;
+   width: 40px; 
+}
+@media(min-width:1583px){
+    .img-git{
+    
+}
+}
+
+.boton-login{
+    width: 120px;
+    height: 40px;
+}
+@media(min-width:1583px){
+    .boton-login{
+        height: 7vh;
+    }
+}
+
+.menu {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    
+}
+@media(min-width:1583px){
+    
+}
+
+.seccion-uno{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+}
+@media(min-width:1583px){
+    .seccion-uno{
+        
+        justify-content: center;
+    }
+}
+
+.background{
+    margin:0;
+}
+.background-image{
+    width: 98.9vw;
+    height: 70vh;
+    margin-bottom: -22px;
+    border-radius: 2%;
+}
+
+.foto-perfil{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin-top: -150px;
+    margin-bottom: -106px;
+    margin-left: 20px;
+}
+@media(min-width:1583px){
+    .foto-perfil{
+    width:300px;
+    height:300px;
+    margin-bottom: -182px;
+
+    }
+}
