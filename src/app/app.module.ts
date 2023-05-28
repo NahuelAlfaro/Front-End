@@ -13,6 +13,8 @@ import { ProjectsComponent } from './components/projects/projects.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { HttpClientModule } from '@angular/common/http';
 import { interceptorProvider } from './service/intercepor-service';
+import { NewExperienciaComponent } from './components/edu-exp/new-experiencia.component';
+import { EditExperienciaComponent } from './components/edu-exp/edit-experiencia.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { interceptorProvider } from './service/intercepor-service';
     HomeComponent,
     LoginComponent,
     ProjectsComponent,
-    SkillsComponent
+    SkillsComponent,
+    NewExperienciaComponent,
+    EditExperienciaComponent
   ],
   imports: [
     BrowserModule,
