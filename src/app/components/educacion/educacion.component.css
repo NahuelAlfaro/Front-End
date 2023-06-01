@@ -1,4 +1,4 @@
-.exp-edu{
+.edu{
     display: flex;
     flex-direction: column;
     margin-top: 20px;
@@ -21,6 +21,12 @@
     color: white;
 }
 
+.td-desc{
+    color: white;
+    line-break: auto;
+    font-size: 18px;
+}
+
 .educacion{
     margin-left: 10px;
     margin-bottom: -5px;
@@ -28,7 +34,7 @@
     color:  #FAFAFA;
 }
 
-.apx-h1{
+/* .apx-h1{
     margin-left: 10px;
     font-size: 30px;
     color:  #FAFAFA;
@@ -64,4 +70,4 @@
     font-size: 15px;
     color:  #FAFAFA;
     opacity: 20%;
-}
+} */

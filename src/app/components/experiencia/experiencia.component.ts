@@ -4,11 +4,11 @@ import { SExperienciaService } from 'src/app/service/s-experiencia.service';
 import { TokenService } from 'src/app/service/token.service';
 
 @Component({
-  selector: 'app-edu-exp',
-  templateUrl: './edu-exp.component.html',
-  styleUrls: ['./edu-exp.component.css']
+  selector: 'app-experiencia',
+  templateUrl: './experiencia.component.html',
+  styleUrls: ['./experiencia.component.css']
 })
-export class EduExpComponent implements OnInit {
+export class ExperienciaComponent implements OnInit {
   expe: Experiencia[]= []
   constructor(private sExperiencia: SExperienciaService, private tokenService: TokenService){}
 
@@ -22,6 +22,7 @@ ngOnInit():void{
     this.isLogged = false;
   }
  }
+  //Metodos-Experiencia
 
  cargarExperiencia():void{
   this.sExperiencia.lista().subscribe(data => {this.expe = data;})
@@ -29,7 +30,8 @@ ngOnInit():void{
 
   delete(id?:number){
     if(id !=undefined){
-      this.sExperiencia.delete(id).subscribe(data=>{
+      this.sExperiencia.delete(id).subscribe(
+        data=>{
         this.cargarExperiencia();
       },err=>{
         alert("error en el proceso de borrar")

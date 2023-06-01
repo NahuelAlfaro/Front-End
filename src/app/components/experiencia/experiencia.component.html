@@ -1,0 +1,40 @@
+<section class="seccion-dos">
+<div class="exp">
+    <h1 class="h1experiencia">Experiencia</h1>
+    <div class="col lg-2">
+      <button type="button" class="btn btn-light" routerLink="/nuevaexp" *ngIf="isLogged">
+        Añadir nuevo
+      </button>
+    </div>
+    <div class="col-lg-11">
+      <table class="table">
+        <tbody>
+          <tr *ngFor="let Experiencia of expe" class="tr">
+            <td class="td">
+              <h2>{{Experiencia.nombreE}}</h2>
+            </td>
+            <td class="td-desc">
+              <p class="td-desc">{{Experiencia.descripcionE}}</p>
+            </td>
+            <td class="td" *ngIf="isLogged">
+              <button class="btn btn-light" routerLink="/editexp/{{Experiencia.id}}"><i class="bi bi-wrench-adjustable-circle-fill"></i> Editar</button>
+            </td>
+            <td class="td" *ngIf="isLogged">
+              <button class="btn btn-danger" (click)="delete(Experiencia.id)"><i class="bi bi-x-octagon"></i> Borrar</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!-- <div class="apx">
+      <h1 class="apx-h1">APX</h1>
+      <p class="apx-p">Desarrollo Web Fullstack - Software Developer</p>
+      <p class="apx-time">2022 - 2023</p>
+    </div>
+    <div class="arg-prog">
+      <h1 class="arg-h1">Argentina Programa</h1>
+      <p class="arg-p">Perfil Full Stack Jr</p>
+      <p class="arg-time">2022-2023</p>
+    </div> -->
+  </div>
+</section>

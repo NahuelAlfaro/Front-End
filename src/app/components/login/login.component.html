@@ -14,7 +14,7 @@
   
               <h3 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Log in</h3>
 
-              <form #form="ngForm" (ngSubmit)="onLogin()" novalidate>
+              <form #f="ngForm" (ngSubmit)="onLogin()" novalidate>
 
                 <div class="form-outline mb-4">
                   <input type="email" id="nombreUsuario" name="nombreUsuario" class="form-control form-control-lg" [(ngModel)]="nombreUsuario" required [ngModelOptions]="{standalone: true}" />
