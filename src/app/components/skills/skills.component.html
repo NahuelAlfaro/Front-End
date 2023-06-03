@@ -1,13 +1,26 @@
 <section class="seccion-dos">
-    <div class="skills">
-        <h1 class="skills-h1">Skills</h1>
-        <div class="skills-barras">
-          <div class="barra-diseño" style="--width: 50" data-label="Diseño"></div>
-          <div
-            class="barra-comunicacion"
-            style="--width: 30"
-            data-label="Comunicacion"
-          ></div>
-        </div>
+  <div class="skill-borde">
+  <h1 class="skills-h1">Skills</h1>
+  <div class="col-lg-2">
+    <button id="agregar-boton" type="button" routerLink="/newskill" class="btn btn-light" *ngIf="isLogged">Añadir Nueva</button>
+  </div>
+
+  <div class="skills-barras">
+    <ng-container *ngFor="let skill of skills">
+      <div class="progress-bar">
+        <div class="progress-bar-inner" [style.width]="skill.porcentaje + '%'"></div>
+        <div class="progress-bar-label">{{ skill.nombre }}</div>
       </div>
-    </section>
+
+      <div class="progress-bar-actions">
+        <button class="btn btn-light" *ngIf="isLogged" [routerLink]="'/editskill/' + skill.id">
+          <i class="bi bi-wrench-adjustable-circle-fill"> Editar</i>
+        </button>
+        <button class="btn btn-danger" *ngIf="isLogged" (click)="delete(skill.id)">
+          <i class="bi bi-x-octagon"> Borrar</i>
+        </button>
+      </div>
+    </ng-container>
+  </div>
+</div>
+</section>
